@@ -23,6 +23,5 @@ exports.add = async (req, res) => {
     const {url} = req.body;
     const data = await etsyScraper(url);
     const product = await Product.create(data);
-    // console.log(product.dataValues);
     res.render('product', { product: product.dataValues });
 }

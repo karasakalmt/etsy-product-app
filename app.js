@@ -26,6 +26,8 @@ db.sequelize.sync()
 });
 
 // I normally use Routes, and Controllers in different folders, but now there are 3 endpoints I will only seperate controller.
+app.get('/', (req, res) => res.redirect('/all-products'));
+
 app.get('/all-products', ProductController.getAll);
 
 app.get('/product/:id', ProductController.getParticular);
