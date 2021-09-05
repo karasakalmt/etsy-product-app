@@ -14,8 +14,8 @@ footer {
     height: 85vh;
     margin: 30px auto;
     display: flex;
-    align-items: center;
-    flex-shrink: 0;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .productbox {
@@ -58,7 +58,7 @@ footer {
 
 .image-container{
     width: 100%;
-    max-height: 20vh;
+    max-height: 15vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -78,5 +78,3 @@ footer {
     flex-grow: 1;
     padding: 20px;
 }
-.details-title{}
-.detail-price{}

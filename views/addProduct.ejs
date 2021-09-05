@@ -1,8 +1,8 @@
-<form class="add-form align-middle">
+<form method="POST" action="/add-product" class="add-form align-middle">
     <div class="form-group">
-      <label for="exampleInputEmail1">Etsy Link</label>
-      <input type="email" class="form-control" placeholder="Enter link">
-      <small id="emailHelp" class="form-text text-muted">Input your Etsy product link above.</small>
+      <label for="url">Etsy Link</label>
+      <input type="text" class="form-control" placeholder="Enter link" name="url">
+      <small class="form-text text-muted">Input your Etsy product link above.</small>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

@@ -1,23 +1,24 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "password",
     "database": "etsy",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "host": "mysql_server",
+    "dialect": "mysql",
+    "logging": false
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "password",
     "database": "etsy",
-    "host": "127.0.0.1",
+    "host": "mysql_server",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": null,
+    "password": "password",
     "database": "etsy",
-    "host": "127.0.0.1",
+    "host": "mysql_server",
     "dialect": "mysql",
     "logging": false
   }

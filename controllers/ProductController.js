@@ -22,5 +22,7 @@ exports.addView = async (req, res) => {
 exports.add = async (req, res) => {
     const {url} = req.body;
     const data = await etsyScraper(url);
-    res.send(await Product.create(data));
+    const product = await Product.create(data);
+    // console.log(product.dataValues);
+    res.render('product', { product: product.dataValues });
 }
