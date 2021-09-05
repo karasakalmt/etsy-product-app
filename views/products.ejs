@@ -1,0 +1,11 @@
+<div class="products-containter">
+    <% for(var product of products) { %>
+    <div class="col-md-2 column productbox">
+        <div class="image-container">
+            <img src="<%= product.image %>" class="img-responsive" style="max-width:100%">
+        </div>
+        <div class="producttitle"><%= product.name%></div>
+        <div class="productprice"><div class="pull-right"><a href="/product/<%= product.id%>" class="btn btn-info btn-sm" role="button">See Details</a></div><div class="pricetext"><%= product.price %> TL</div></div>
+    </div>
+    <% } %>
+</div>
